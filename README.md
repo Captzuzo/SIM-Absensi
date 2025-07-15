@@ -21,25 +21,35 @@ cd sim-absensi
 
 ### 2. Install Dependency
 
+```bash
 composer install
 npm install && npm run dev
+```
 
 ### 3. Copy & Atur File .env
 
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=nama_database
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 ### 4. Migrasi dan Seeder
 
+```bash
 php artisan migrate --seed
+```
 
 ### 5. Jalankan Server
 
+```bash
 php artisan serve
+```
